@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "lpc-fase-2"
+version = "0.1.0"
+description = ""
+authors = ["Felipe Sebben <felipesebben@yahoo.com.br>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+isort = "^5.13.2"
+black = "^24.3.0"
+taskipy = "^1.12.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.taskipy.tasks]
+format = "isort . && black ."
